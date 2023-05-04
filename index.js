@@ -32,9 +32,15 @@ console.log(totalPrice)
 //6. Prints an array of all the drinks that are seasonal.
 
 const seasonal = coffeeMenu.filter(drink => drink.seasonal)
-console.log(coffeeMenu)
+console.log("seasonal drinks", seasonal)
 
+//7. 7. Print all the seasonal drinks with the words "with imported beans" after the item name. For example: "affogato with imported beans".
 
+function importedBeans(drink) {
+    console.log(drink.name + " with imported beans")  
+}
+
+const seasonalDrinks = seasonal.forEach(importedBeans)
 
 
 
